@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>SignUp</h1>
+                    <h5>Please Register Yourself!!</h5>
+                </div>
+                
+                    <form [formGroup]="signupform" (ngSubmit)="signup()">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">First Name:</label>
+                            <input type="text" formControlName="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">last Name:</label>
+                            <input type="text" formControlName="lastName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Mobile Number:</label>
+                            <input type="number" class="form-control" formControlName="mobile" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                            <input type="email"formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                          </div>
+                         
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password:</label>
+                          <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Gender:</label>
+                            <input type="text" formControlName="gender" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                             
+                          </div>
+                         
+                        <button type="submit" class="btn btn-success" >SignUp</button>
+                      </form>
+                      <a style="color:yellow; margin-top: 4px;" routerLink="/login">Already Registered..Click Here to Login </a>   
+                
+            </div>
+        </div>
+    </div>
+ </div>
+
